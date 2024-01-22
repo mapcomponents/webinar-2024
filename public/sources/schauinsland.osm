@@ -1,0 +1,138 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.61.5 4133829e",
+  "osm3s": {
+    "timestamp_osm_base": "2024-01-22T07:53:45Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 1735603582,
+      "lat": 47.9180022,
+      "lon": 7.8998505,
+      "tags": {
+        "emergency_telephone_code": "112",
+        "highway": "emergency_access_point",
+        "old_ref": "311.18",
+        "operator": "Städtisches Forstamt Freiburg",
+        "ref": "FR-008",
+        "source": "survey 2020-05-21"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5840520266,
+      "lat": 47.9205358,
+      "lon": 7.8798647,
+      "tags": {
+        "emergency_telephone_code": "112",
+        "highway": "emergency_access_point",
+        "old_ref": "311.35",
+        "operator": "Städtisches Forstamt Freiburg",
+        "ref": "FR-019",
+        "source": "survey 2020-04"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7458679412,
+      "lat": 47.9229965,
+      "lon": 7.8971509,
+      "tags": {
+        "highway": "emergency_access_point",
+        "note": "Real sind Rettungspunkt und Wegweiser am gleichen Pfosten montiert, aber nur mit zwei getrennten Punkten sind alle Tags eindeutig zuzuordnen.",
+        "operator": "Städtisches Forstamt Freiburg",
+        "ref": "FR-007",
+        "source": "survey 2020-05-21"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7458679413,
+      "lat": 47.9145695,
+      "lon": 7.9085369,
+      "tags": {
+        "highway": "emergency_access_point",
+        "note": "Real sind Rettungspunkt und Wegweiser am gleichen Pfosten montiert, aber nur mit zwei getrennten Punkten sind alle Tags eindeutig zuzuordnen.",
+        "operator": "Städtisches Forstamt Freiburg",
+        "ref": "FR-009",
+        "source": "survey 2020-05-21"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7458679414,
+      "lat": 47.9085643,
+      "lon": 7.8925633,
+      "tags": {
+        "highway": "emergency_access_point",
+        "note": "Real sind Rettungspunkt und Wegweiser am gleichen Pfosten montiert, aber nur mit zwei getrennten Punkten sind alle Tags eindeutig zuzuordnen.",
+        "operator": "Städtisches Forstamt Freiburg",
+        "ref": "FR-015",
+        "source": "survey 2020-05-21"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7458679415,
+      "lat": 47.9126567,
+      "lon": 7.8922645,
+      "tags": {
+        "highway": "emergency_access_point",
+        "operator": "Städtisches Forstamt Freiburg",
+        "ref": "FR-016",
+        "source": "survey 2020-05-21"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7458679416,
+      "lat": 47.911272,
+      "lon": 7.8615674,
+      "tags": {
+        "highway": "emergency_access_point",
+        "note": "Real sind Rettungspunkt und Wegweiser am gleichen Pfosten montiert, aber nur mit zwei getrennten Punkten sind alle Tags eindeutig zuzuordnen.",
+        "operator": "Städtisches Forstamt Freiburg",
+        "ref": "FR-018",
+        "source": "Städtisches Forstamt Freiburg"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7458679419,
+      "lat": 47.933984,
+      "lon": 7.8960398,
+      "tags": {
+        "highway": "emergency_access_point",
+        "operator": "Städtisches Forstamt Freiburg",
+        "ref": "FR-051",
+        "source": "survey 2020-05-21"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7458679441,
+      "lat": 47.9147304,
+      "lon": 7.8816457,
+      "tags": {
+        "highway": "emergency_access_point",
+        "operator": "Städtisches Forstamt Freiburg",
+        "ref": "FR-017",
+        "source": "survey 2020-04"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7458679443,
+      "lat": 47.9249593,
+      "lon": 7.8775594,
+      "tags": {
+        "highway": "emergency_access_point",
+        "operator": "Städtisches Forstamt Freiburg",
+        "ref": "FR-020",
+        "source": "survey 2020-04"
+      }
+    }
+  ]
+}
