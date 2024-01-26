@@ -702,10 +702,10 @@
   resolved "https://registry.yarnpkg.com/@mapbox/whoots-js/-/whoots-js-3.1.0.tgz#497c67a1cef50d1a2459ba60f315e448d2ad87fe"
   integrity sha512-Es6WcD0nO5l+2BOQS4uLfNPYQaNDfbot3X1XUoloz+x0mPDS3eeORZJl06HXjwBG1fOGwCRnzK88LMdxKRrd6Q==
 
-"@mapcomponents/react-maplibre@^0.1.94":
-  version "0.1.94"
-  resolved "https://registry.yarnpkg.com/@mapcomponents/react-maplibre/-/react-maplibre-0.1.94.tgz#deea895e23f940b314a4c744d5b9fea0354eacdf"
-  integrity sha512-fLOP085MJzzXF5T6WxcZ+/095N/5rZ5VBc+3AzlSkbCf1MB0Z6QsvPsL5448M6tdpRybLJn5qiwDjthsga/OxA==
+"@mapcomponents/react-maplibre@^0.1.95":
+  version "0.1.95"
+  resolved "https://registry.yarnpkg.com/@mapcomponents/react-maplibre/-/react-maplibre-0.1.95.tgz#f1f488692bb6e41369e5ce863e662acc980140dd"
+  integrity sha512-URSVuzfMI0pZtZGHIZq+B7K6BMYzhBFv2MI0r3PD3L8lEsXvctYmfrzk1dIylOe38RimLlSvpTcC5viUjEWjIQ==
   dependencies:
     "@dnd-kit/core" "^6.0.8"
     "@dnd-kit/modifiers" "^6.0.1"
