@@ -4,16 +4,11 @@ import {
   useAddProtocol,
   useMap,
   OSMProtocolHandler,
+  useAddImage
 } from "@mapcomponents/react-maplibre";
 
 import { Button } from "@mui/material";
 
-/*
-TODO; 
- - import protocol Handler von MapComponents
- - useAdd image importieren / add image hook entfernen
- -source und label properties den MlGeojsonLayer nehmen (und addSource hook entfernen) 
-*/
 const osmOptions = {
   completeFeature: true,
   allFeatures: false,
@@ -34,14 +29,11 @@ export default function OSMLayer() {
     handler: OSMProtocolHandler,
   });
 
-  useEffect(() => {
-    if (!mapHook.map?.hasImage("rettungs-punkt")) {
-      mapHook.map?.loadImage("/rettungspunkt.jpg", (error, image) => {
-        if (error) throw error;
-        mapHook.map?.addImage("rettungs-punkt", image);
-      });
-    }
-  }, [mapHook.map]);
+  useAddImage({
+    imageId: "rettungs-punkt",
+    imagePath: "/rettungspunkt.jpg"
+  })
+
 
   return (
     <>
