@@ -89,7 +89,7 @@ Zurück zu unserer ProjectLayers-Komponente fügen wir diese Eigenschaften zu un
 ```
 Innerhalb der Optionen sind *paint* und *layout* für die Definition der grafischen Aspekte der Datendarstellung zuständig. 
 Weitere Informationen hierzu sind in der MapLibre-Dokumentation zu finden:
-***paint***: https://maplibre.org/maplibre-style-spec/layers/#paint-property
+***paint***: https://maplibre.org/maplibre-style-spec/layers/#paint-property <br>
 ***layout***: https://maplibre.org/maplibre-style-spec/layers/#layout-property
 
 
