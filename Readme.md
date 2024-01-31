@@ -1,4 +1,4 @@
-# MapComponents + Vite + React
+# MapComponents Webinar 2024
 
 This is a [MapComponents](https://mapcomponents.org) project using Vite and React.
 
@@ -13,14 +13,14 @@ Die Komponenten sind voneinander isoliert, interagieren also nicht direkt mitein
 
 ## Über dieses Repository
 Dieses Repository enthält sowohl den Code als auch eine Erklärung der Schritte zur Erstellung einer MapComponents-Beispielanwendung. In jedem der Verzeichnisse enthält die Datei Readme.md die ausführliche Beschreibung und der Code entspricht dem Zustand der Anwendung, nachdem der jeweilige Schritt abgeschlossen ist.
-Alle Datendateien, die als Quellen für die Anwendung verwendet werden, befinden sich in den in der Beschreibung angegebenen Ordnern. 
-Jeder Ordner enthält eine von den anderen unabhängige Anwendung, die im Entwicklungsmodus ausgeführt werden kann, indem Sie die folgenden Befehle im Terminal ausführen: 
+Alle Daten, die als Quellen für die Anwendung verwendet werden, befinden sich in den in der Beschreibung angegebenen Ordnern. 
+Jeder Ordner enthält eine von den anderen unabhängige Anwendung, die im Entwicklungsmodus ausgeführt werden kann, indem man die folgenden Befehle im Terminal ausführt: 
 1. `cd Step<number>`
 2. `yarn`
 3. `yarn dev`
 
 ## Step 0
-Bevor wir beginnen, erstellen wir eine MapComponents-Anwendung unter Verwendung der Vorlage [MapComponents + vite + react + typescript](https://github.com/mapcomponents/template). 
+Bevor wir beginnen, erstellen wir eine MapComponents-Anwendung unter Verwendung dem Template [MapComponents + vite + react + typescript](https://github.com/mapcomponents/template). 
 Wir öffnen ein Terminal in dem Ordner, in dem wir arbeiten wollen, und führen die folgenden Befehle aus: 
 1. `npx degit mapcomponents/template {your-app-name}`
 2. `cd {your-app-name}`
