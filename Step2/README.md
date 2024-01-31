@@ -3,7 +3,7 @@
 ## Step 2
 
 
-Legen wir nun eine zweite Ebene auf der Karte an. Aber dieses Mal werden wir eine csv-Datei als Quelle verwenden. Dabei handelt es sich um eine Tabelle, die die Spalten "latitude" und "longitude" mit den Koordinaten enthält, die einer Serie von Punkten entsprechen. Die Datei befindet sich in den Ordner *public/sources/*. 
+Legen wir nun eine zweite Ebene auf der Karte an. Aber dieses Mal werden wir eine csv-Datei als Quelle verwenden. Dabei handelt es sich um eine Tabelle, die die Spalten "latitude" und "longitude" mit den Koordinaten enthält, die einer Serie von Punkten entsprechen. Die Datei befindet sich im Ordner *public/sources/*. 
 
 
 #### CSVProtocolHandler
@@ -52,7 +52,7 @@ Wir fügen einen neuen MlGeojsonLayer hinzu, aber dieses Mal verwenden wir nicht
 
 #### CSVProtocolHandler optionen
 Die in Mapcomponents enthaltene Funktion CSVProtocolHandler bietet die Möglichkeit, einige Optionen anzugeben, um zu steuern, wie die Datei gelesen werden soll. Diese Optionen sind: 
-- **latfield**: der Name des Feldes in der Tabelle, in dem sich der Breitengradwert befindet. Die Funktion kann es automatisch lesen, wenn es den Namen "latitude" oder "lat" trägt oder eines von beiden enthält. 
+- **latfield**: der Name des Feldes in der Tabelle, in dem sich der Breitengradwert befindet. Die Funktion kann es automatisch lesen, wenn sie den Namen "latitude" oder "lat" trägt oder eines von beiden enthält. 
 -	**lonfield**: wie bei der vorherigen Option;
 -	**delimiter**: erlaubt es den Benutzern, das Zeichen festzulegen, das in der Datei zur Trennung der Spalten verwendet wird, falls es sich nicht um ein Komma handelt. 
 
