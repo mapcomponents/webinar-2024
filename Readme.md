@@ -19,6 +19,8 @@ Jeder Ordner enthält eine von den anderen unabhängige Anwendung, die im Entwic
 2. `yarn`
 3. `yarn dev`
 
+
+![Screenshot der fertigen Anwendung.](./beispiel_app.png)
 ## Step 0
 Bevor wir beginnen, erstellen wir eine MapComponents-Anwendung unter Verwendung dem Template [MapComponents + vite + react + typescript](https://github.com/mapcomponents/template). 
 Wir öffnen ein Terminal in dem Ordner, in dem wir arbeiten wollen, und führen die folgenden Befehle aus: 
@@ -26,6 +28,8 @@ Wir öffnen ein Terminal in dem Ordner, in dem wir arbeiten wollen, und führen 
 2. `cd {your-app-name}`
 3. `yarn`
 4. `yarn dev`
+
+
 
 #### <div align="right"> [Zu Step1](https://github.com/mapcomponents/webinar-2024/tree/main/Step1#step-1)</div>
 
