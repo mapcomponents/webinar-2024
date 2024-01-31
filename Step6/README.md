@@ -10,10 +10,7 @@ Zunächst definieren wir eine Variable mithilfe des useState-Hooks von React:
   const [showRettungspunkte, setShowRettungspunkte] = useState(false);
 ```
 useState ermöglicht es uns, die Variable und gleichzeitig die Funktion, die sie verändert, zu definieren. Dies ist wichtig, da unsere Anwendung auf jede Änderung des Zustands der Variablen showRettungspunkte reagieren soll.
-Und wir fügen eine weitere Variable hinzu, mit der wir die Farbe des Buttons ändern können, je nachdem, ob der Layer aktiv ist oder nicht. Die Farben kann man mit Hex Codes genauer definieren: 
-```
-const buttonColor = showRettungspunkte ? "grey" : "green";
-```
+
 
 Zuerst importieren wir es aus MaterialUI
 ```
@@ -25,13 +22,13 @@ und dann fügen wir den Button in unsere Retrun-Anweisung ein:
  <Button
         variant="contained"
         onClick={() => setShowRettungspunkte(!showRettungspunkte)}
-        sx={{ zIndex: 1200, left: "90%", backgroundColor: buttonColor }}
+        sx={{ left: "90%", backgroundColor: showRettungspunkte ? "grey" : "green" }}
       >
         Rettungspunkte
       </Button>
 ```
 Wenn der Button angeklickt wird, setzt er die Variable showRettungsPunkte auf den gegenteiligen Wert von den, der die hattet (wenn sie false war, wird sie true und umgekehrt). 
-In den Style-Eigenschaften legen wir die Variable "buttonColor" als die Hintergrundfarbe des Buttons fest. Auf diese Weise wird jedes Mal, wenn sich der Zustand von "showRettungspunkte" ändert, die Farbe der Schaltfläche aktualisiert. 
+In den Style-Eigenschaften legen wir eine Expression als die Hintergrundfarbe des Buttons fest. Da mit wird die Farbe des Buttons, je nachdem, ob der Layer aktiv ist oder nicht, anders definiert. Auf diese Weise wird jedes Mal, wenn sich der Zustand von "showRettungspunkte" ändert, die Farbe der Schaltfläche aktualisiert. 
 
 #### Bedingtes Rendering eines Layers
 Mit den hinzugefügten Elementen können wir nun unserer Datenebene mitteilen, wann sie erscheinen soll und wann nicht. 

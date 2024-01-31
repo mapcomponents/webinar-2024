@@ -65,7 +65,7 @@ export default function OSMLayer() {
       <Button
         variant="contained"
         onClick={() => setShowRettungspunkte(!showRettungspunkte)}
-        sx={{ left: "90%", backgroundColor: buttonColor }}
+        sx={{ left: "90%", backgroundColor: showRettungspunkte ? "grey" : "green" }}
       >
         Rettungspunkte
       </Button>
