@@ -16,10 +16,9 @@ export default function ProjectLayers() {
 
   return (
     <>
-      <Sidebar open={true} name={"Layers"}>
+      <Sidebar open={true} name={"Layers"} >
         <LayerList>
-          <LayerListItem
-            visible={true}
+          <LayerListItem            
             configurable={true}
             type="layer"
             layerId="monitoring"
@@ -50,7 +49,9 @@ export default function ProjectLayers() {
                     type: "geojson",
                     data: "csv://sources/samples.csv",
                   },                  
-                  paint: { "circle-color": "#22BB5D" , "circle-stroke-width": 0 },
+                  paint: { 
+                    "circle-color": "#22BB5D",
+                    "circle-stroke-width": 0 },
                 }}
                 labelProp="id"
                 labelOptions={{
@@ -75,7 +76,7 @@ export default function ProjectLayers() {
             }
           />
         </LayerList>
-      </Sidebar>
+        </Sidebar>
     </>
   );
 }
