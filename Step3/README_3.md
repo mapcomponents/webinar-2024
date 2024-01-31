@@ -29,8 +29,8 @@ In der Sidebar importieren wir die Komponente LayerList und fügen ihr mit der K
     </LayerList>
 </Sidebar>
 ```
-In der Sidebar importieren wir die Komponente LayrList und fügen ihr mit der Komponente LayerListItem eine erste Ebene Jedem Element in der Layerlist kann ein Name zugewiesen werden, mit dem die Ebene in der Ebenenbaum identifiziert wird. 
-*LayerComponent* ist ein wesentliches Attribut, denn in diesem  wird die Ebene selbst übergeben. In diesem Fall ist unser erstes Element "Monitoring Areas", also nehmen wir die Ebene mit diesen Daten und verschieben sie in die Klammern: 
+In der Sidebar importieren wir die Komponente LayrList und fügen ihr mit der Komponente LayerListItem eine erste Ebene Jedem Element in der Layerlist kann ein *Name* zugewiesen werden, mit dem die Ebene in der Ebenenbaum identifiziert wird. 
+*LayerComponent* ist ein wesentliches Attribut, denn in diesem wird die Ebene selbst übergeben. In diesem Fall ist unser erstes Element "Monitoring Areas", also nehmen wir die Ebene mit diesen Daten und verschieben sie in die Klammern: 
 
 ```
  <Sidebar open={true} name={"Layers"} >
@@ -54,4 +54,42 @@ In der Sidebar importieren wir die Komponente LayrList und fügen ihr mit der Ko
 </Sidebar>
 ```
 #### LayeListItem Properties
+MapComponents LayerList bietet eine Vielzahl von Optionen, die für jedes Item in der Liste konfigurierbar sind. Hier sind einige von ihnen: 
 
+- layerId: optionale String, der die ID definiert, mit der die Ebene auf der Karte registriert wird (wichtig für die Interaktion mit der Ebene in der Anwendung)
+- name: Name, mit dem die Ebene in der Ebenenbaum identifiziert wird
+- visible: bestimmt, ob die Ebene sichtbar ist oder nicht
+- configurable: optionale Eigenschaft, die eine Schnittstelle zur Änderung von Layereigenschaften wie Farbe oder Liniendicke einführt (je nach Layertyp variabel)
+- type: optionale Eigenschaft, die die Ebene verschiedenen Gruppen zuordnet. Optionen: 'background' | 'background-labels' | 'layer' | 'wms-layer' | 'vector-tile-layer';	
+- description: optionale Eigenschaft;
+- showDeleteButton: optionale Eigenschaft, mit der ein Button zum Löschen der Ebene aus der Liste eingeführt wird;
+- buttons: Hier können benutzerdefinierte Buttons mit eigenen Funktionen hinzugefügt werden. 
+- sortable: optionaler Boolescher Wert, der die Neuordnung von Listenelementen durch drag-and-drop ermöglicht;
+
+
+Hier werden wir einige dieser Eigenschaften zu unsererLayerList hinzufügen:
+
+```
+<Sidebar open={true} name={"Layers"} >
+        <LayerList>
+          <LayerListItem                   
+            configurable={true}
+            type="layer"
+            layerId="monitoring"
+            name="Monitoring areas"
+            
+                  layerComponent={
+              <MlGeoJsonLayer
+                geojson={monitoringAreas}
+                options={{
+                  paint: {
+                    "fill-color": "#5353ec",
+                    "fill-opacity": 0.5,
+                    "fill-outline-color": "#000",
+                  },
+                }}
+              />
+            }
+          />
+</Sidebar>
+```

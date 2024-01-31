@@ -18,7 +18,7 @@ export default function ProjectLayers() {
     <>
       <Sidebar open={true} name={"Layers"} >
         <LayerList>
-          <LayerListItem            
+          <LayerListItem                   
             configurable={true}
             type="layer"
             layerId="monitoring"
