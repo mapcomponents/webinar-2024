@@ -27,5 +27,5 @@ Wir öffnen ein Terminal in dem Ordner, in dem wir arbeiten wollen, und führen 
 3. `yarn`
 4. `yarn dev`
 
-[Zu Step1](https://github.com/mapcomponents/webinar-2024/tree/main/Step1#step-1)
+#### <div align="right"> [Zu Step1](https://github.com/mapcomponents/webinar-2024/tree/main/Step1#step-1)</div>
 

@@ -1,4 +1,5 @@
 # MapComponents Webseminar 2024
+#### <div align="right"> [Home](https://github.com/mapcomponents/webinar-2024)</div>
 
 ## Step 6
 
@@ -67,3 +68,6 @@ Zum Schluss fügen wir dem Layer eine Funktion für das Anklicken eines der Rett
 
 Diese Funktion ist sehr rudimentär und gibt durch den Alarm Interface eine Meldung mit den Daten des angeklickten Rettungspunktes aus. 
 Unter den Event-Features kann man auf die Features zugreifen, deren Position mit der angeklickten Position übereinstimmt. Bei bestimmten Zoomstufen oder bei sich überschneidenden Geometrien kann es sich um mehr als ein Feature handeln. Aus diesem Grund rufen wir das erste Objekt in der Liste auf (features[0]) und fragen dann einige seiner Properties ab. 
+
+
+#### <div align="right"> [Home](https://github.com/mapcomponents/webinar-2024)</div>

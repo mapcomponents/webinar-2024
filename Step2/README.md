@@ -1,4 +1,5 @@
 # MapComponents Webseminar 2024
+#### <div align="right"> [Home](https://github.com/mapcomponents/webinar-2024)</div>
 
 ## Step 2
 
@@ -90,3 +91,4 @@ Um die Visualisierung zu verbessern, haben wir dem Layer einige Designdefinition
       />
  ```
 
+#### <div align="right"> [Zu Step3](https://github.com/mapcomponents/webinar-2024/tree/main/Step3#step-3)</div>

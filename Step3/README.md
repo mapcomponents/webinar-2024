@@ -1,4 +1,5 @@
 # MapComponents Webseminar 2024
+#### <div align="right"> [Home](https://github.com/mapcomponents/webinar-2024)</div>
 
 ## Step 3
 
@@ -105,3 +106,6 @@ Zum Schluss, führen wir ein neues LayerListItem und schieben unseren "samples" 
     }
 />
 ```
+
+
+#### <div align="right"> [Zu Step4](https://github.com/mapcomponents/webinar-2024/tree/main/Step4#step-4)</div>

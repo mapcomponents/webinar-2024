@@ -1,4 +1,5 @@
 # MapComponents Webseminar 2024
+#### <div align="right"> [Home](https://github.com/mapcomponents/webinar-2024)</div>
 
 ## Step 5
 
@@ -58,4 +59,5 @@ Die folgenden Änderungen sind hier wichtig:
 - Die Eigenschaft "icon-size" reduziert die Größe des Bildes, die in diesem Fall 600x600 Pixel beträgt. In der Praxis wäre es sinnvoll, die ursprüngliche Größe des Bildes zu reduzieren, bevor es registriert wird. 
 
 
+#### <div align="right"> [Zu Step6](https://github.com/mapcomponents/webinar-2024/tree/main/Step6#step-6)</div>
 
