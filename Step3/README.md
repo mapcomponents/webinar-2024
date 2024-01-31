@@ -1,6 +1,6 @@
 # MapComponents Webseminar 2024
 #### <div align="right"> [Home](https://github.com/mapcomponents/webinar-2024)</div>
-
+#### <div align="right"> [Zu Step 2](https://github.com/mapcomponents/webinar-2024/tree/main/Step2#step-2)</div>
 ## Step 3
 
 Um die Visualisierung unserer GIS-Daten zu verbessern und mit unseren Layern über die Benutzeroberfläche zu interagieren, bietet MapComponents seit der Version v0.1.68 die Komponente LayerList an. Diese Komponente ermöglicht die einfache Erstellung eines Ebenenbaums und bietet Funktionalitäten wie die Änderung der Sichtbarkeit von Ebenen, die Bearbeitung der Symbole durch dynamische Werkzeuge oder die Reorganisation des Baums durch Verschieben von Layern per Drag-and-Drop.

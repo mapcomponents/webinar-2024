@@ -1,6 +1,6 @@
 # MapComponents Webseminar 2024
 #### <div align="right"> [Home](https://github.com/mapcomponents/webinar-2024)</div>
-
+#### <div align="right"> [Zu Step 3](https://github.com/mapcomponents/webinar-2024/tree/main/Step3#step-3)</div>
 ## Step 4
 
 Hier wird eine neue Layer-Komponente zum Laden die Rettungspunkte im Projektbereich erzeugt.
@@ -107,4 +107,4 @@ In der Datei App.tsx fügen wir die Komponente hinzu, um den neuen Layer auf der
 
 ```
 
-#### <div align="right"> [Zu Step5](https://github.com/mapcomponents/webinar-2024/tree/main/Step5#step-5)</div>
+#### <div align="right"> [Zu Step 5](https://github.com/mapcomponents/webinar-2024/tree/main/Step5#step-5)</div>
