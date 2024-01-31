@@ -22,9 +22,8 @@ export default function ProjectLayers() {
             configurable={true}
             type="layer"
             layerId="monitoring"
-            name="Monitoring areas"
-            
-                  layerComponent={
+            name="Monitoring areas"         
+            layerComponent={
               <MlGeoJsonLayer
                 geojson={monitoringAreas}
                 options={{
@@ -39,7 +38,7 @@ export default function ProjectLayers() {
           />
           <LayerListItem
             name="Samples"
-            configurable={true}
+            configurable={true}         
             layerComponent={
               <MlGeoJsonLayer
                 layerId="samples"
@@ -81,5 +80,4 @@ export default function ProjectLayers() {
   );
 }
 
-/*
- */
+
