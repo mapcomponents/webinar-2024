@@ -7,12 +7,11 @@ import {
 
 const osmOptions = {
   completeFeature: true,
-  allFeatures: false,
   renderTagged: false,
-  excludeWay: true,
-  suppressWay: false,
+  excludeWay: true
 };
-const optionsURL = "?" + new URLSearchParams(JSON.stringify(osmOptions));
+
+const optionsURL = "?" +  encodeURI(JSON.stringify(osmOptions));
 
 export default function OSMLayer() {
   useAddProtocol({
