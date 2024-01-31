@@ -16,6 +16,7 @@ Wir fügen "Sidebar" in die Liste der Mapcomponent-Importe am Beginn der Datei e
 ```
 
 #### LayerList und LayerListItem
+In der Sidebar importieren wir die Komponente LayerList und fügen ihr mit der Komponente LayerListItem eine erste Ebene hinzu. Beide Komponenten werden in die MapComponents-Importliste noch hinzugefügt. 
 
 ```
  <Sidebar open={true} name={"Layers"} >
@@ -28,3 +29,29 @@ Wir fügen "Sidebar" in die Liste der Mapcomponent-Importe am Beginn der Datei e
     </LayerList>
 </Sidebar>
 ```
+In der Sidebar importieren wir die Komponente LayrList und fügen ihr mit der Komponente LayerListItem eine erste Ebene Jedem Element in der Layerlist kann ein Name zugewiesen werden, mit dem die Ebene in der Ebenenbaum identifiziert wird. 
+*LayerComponent* ist ein wesentliches Attribut, denn in diesem  wird die Ebene selbst übergeben. In diesem Fall ist unser erstes Element "Monitoring Areas", also nehmen wir die Ebene mit diesen Daten und verschieben sie in die Klammern: 
+
+```
+ <Sidebar open={true} name={"Layers"} >
+        <LayerList>
+          <LayerListItem 
+            type="layer"
+            name="Monitoring areas"            
+            layerComponent={
+              <MlGeoJsonLayer
+                geojson={monitoringAreas}
+                options={{
+                  paint: {
+                    "fill-color": "#5353ec",
+                    "fill-opacity": 0.5,
+                    "fill-outline-color": "#000",
+                  },
+                }}
+              />
+            }
+        />
+</Sidebar>
+```
+#### LayeListItem Properties
+
