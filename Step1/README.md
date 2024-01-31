@@ -1,6 +1,7 @@
-# MapComponents Webseminar 2024
+# MapComponents Webseminar 2024 
+#####<div align="right"> [Home](https://github.com/mapcomponents/webinar-2024)</div>
+## Step 1 
 
-## Step 1
 
 #### Allgemeine Einstellungen der Karte
 Beim Starten der Anwendung, die auf der MapComponents-Template basiert, ist bereits eine Instanz von MapLibre in dieser vorhanden. In der Datei *App.tsx* im Ordner *src* sehen wir die Komponente, die sie startet. 
