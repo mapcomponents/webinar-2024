@@ -39,6 +39,7 @@ Zunächst importieren wir die Datei in unsere neue Komponente:
 
 ```
 import monitoringAreas from "./monitoringAreas.json";
+import { MlGeoJsonLayer } from "@mapcomponents/react-maplibre";
 ```
 
 Und wir erstellen den ersten Layer im Return Statement: 
