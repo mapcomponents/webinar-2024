@@ -44,6 +44,7 @@ Wir fügen einen neuen MlGeojsonLayer hinzu, aber dieses Mal verwenden wir nicht
             "circle-stroke-width": 1,
           },
         }}
+         />
  ```
 
  Dieses Source-Objekt hat zwei Eigenschaften: erstens  *type*, der sich auf den vom protocolHandler zurückgegebenen Dateityp bezieht, und zweitens *data*, was in diesem Fall eine URL ist. Diese Url setzt sich zusammen aus:
