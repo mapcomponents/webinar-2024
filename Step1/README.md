@@ -26,7 +26,7 @@ Wir erstellen zunächst einen neuen Ordner in den *src* Verzeichnis, den wir *La
 Auch im *Layers* stellen wir eine neue Datei mit dem Namen ProjectLayer.jsx (oder .tsx für TypeScript) und definieren die Grundstruktur: 
 
 ```
-export default function ProjectLayer() {
+export default function ProjectLayers() {
   return(
     <>
     </>
