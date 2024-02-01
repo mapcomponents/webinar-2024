@@ -13,7 +13,7 @@ Seit der Version 0.1.81 bietet MapComponents einen Hook an, der useAddProtocol, 
 In diesem Fall importieren wir den CSVrotocolHandler aus MapComponents zusammen mit dem useAddProtocol Hook:
 
 ```
-import { useAddProtocol, OSMProtocolHandler } from "@mapcomponents/react-maplibre";
+import { useAddProtocol,  CSVProtocolHandler } from "@mapcomponents/react-maplibre";
 
 ```
 Und wir fügen den Hook zur Komponente hinzu, vor den Return Statement:
