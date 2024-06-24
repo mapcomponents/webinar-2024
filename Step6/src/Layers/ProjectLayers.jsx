@@ -36,8 +36,7 @@ export default function ProjectLayers() {
           layerTypes={["osm"]}
           onComplete={(config) => setUserlayer(config)}
         />
-        {userLayer && <MlGeoJsonLayer {...userLayer?.config} />}
-
+        
         <LayerList>
           <LayerListItem
             visible={true}
