@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   LayerList,
   LayerListItem,
@@ -5,18 +6,38 @@ import {
   Sidebar,
   useAddProtocol,
   CSVProtocolHandler,
+  AddLayerButton,
+  useSource
 } from "@mapcomponents/react-maplibre";
 import monitoringAreas from "./monitoringAreas.json";
+import {Button} from '@mui/material';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 export default function ProjectLayers() {
+
   useAddProtocol({
     protocol: "csv",
     handler: CSVProtocolHandler,
   });
 
+  useSource({sourceId: "samples-source" , source:{
+    type: "geojson",
+    data: "csv://sources/samples.csv",
+  }})
+
+  const [userLayer, setUserlayer] = useState();
+ 
+  
   return (
     <>
       <Sidebar open={true} name={"Layers"}>
+        
+        <AddLayerButton
+          layerTypes={["osm"]}
+          onComplete={(config) => setUserlayer(config)}
+        />
+        {userLayer && <MlGeoJsonLayer {...userLayer?.config} />}
+
         <LayerList>
           <LayerListItem
             visible={true}
@@ -24,8 +45,7 @@ export default function ProjectLayers() {
             type="layer"
             layerId="monitoring"
             name="Monitoring areas"
-            
-                  layerComponent={
+            layerComponent={
               <MlGeoJsonLayer
                 geojson={monitoringAreas}
                 options={{
@@ -46,34 +66,35 @@ export default function ProjectLayers() {
                 layerId="samples"
                 type="circle"
                 options={{
-                  source: {
-                    type: "geojson",
-                    data: "csv://sources/samples.csv",
-                  },                  
-                  paint: { "circle-color": "#22BB5D" , "circle-stroke-width": 0 },
+                  source: "samples-source",
+                  paint: {
+                    "circle-color": "#22BB5D",
+                    "circle-stroke-width": 0,
+                  },
                 }}
                 labelProp="id"
                 labelOptions={{
+                  source: "samples-source",  
                   layout: {
                     "text-size": {
-                      "stops": [
-                        [
-                          13,
-                          15
-                        ],
-                        [
-                          22,
-                          60
-                        ]
-                      ]
-                    }
-                },
-                minzoom: 13
-              }
-              }
+                      stops: [
+                        [13, 15],
+                        [22, 60],
+                      ],
+                    },
+                  },
+                  minzoom: 13,
+                }}
               />
             }
           />
+          {userLayer &&  <LayerListItem
+            name="User Layer"
+            configurable={true}            
+            buttons={<Button onClick={()=> setUserlayer(undefined)}><DeleteIcon /></Button>}
+            layerComponent={<MlGeoJsonLayer {...userLayer?.config} />}            
+            />
+          }
         </LayerList>
       </Sidebar>
     </>
