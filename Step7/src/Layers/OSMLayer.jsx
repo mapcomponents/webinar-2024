@@ -3,7 +3,8 @@ import {
   MlGeoJsonLayer,
   useAddProtocol,
   OSMProtocolHandler,
-  useAddImage,  
+  useAddImage,
+  useSource
 } from "@mapcomponents/react-maplibre";
 
 import { Button } from "@mui/material";
@@ -31,6 +32,13 @@ export default function OSMLayer() {
     imagePath: "/rettungspunkt.jpg"
   })
 
+  useSource({
+    sourceId: "rettungspunkte",
+    source: {
+        type: "geojson",
+        data: "osm://sources/schauinsland.osm" + optionsURL,
+      }
+  })
 
   return (
     <>
@@ -39,10 +47,7 @@ export default function OSMLayer() {
           layerId={"osm-rettung"}
           type="symbol"
           options={{          
-            source: {
-                type: "geojson",
-                data: "osm://sources/schauinsland.osm" + optionsURL,
-              },
+            source: "rettungspunkte",
             paint: { "icon-opacity": 0.8 },
             layout: {
               "icon-image": "rettungs-punkt",

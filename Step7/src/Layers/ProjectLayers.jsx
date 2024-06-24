@@ -20,11 +20,23 @@ export default function ProjectLayers() {
     handler: CSVProtocolHandler,
   });
 
+  useSource({sourceId: "samples-source" , source:{
+    type: "geojson",
+    data: "csv://sources/samples.csv",
+  }})
+
+  const [userLayer, setUserlayer] = useState();
+ 
   
   return (
     <>
       <Sidebar open={true} name={"Layers"}>
-              
+        
+        <AddLayerButton
+          layerTypes={["osm"]}
+          onComplete={(config) => setUserlayer(config)}
+        />
+        
         <LayerList>
           <LayerListItem
             visible={true}
@@ -53,17 +65,15 @@ export default function ProjectLayers() {
                 layerId="samples"
                 type="circle"
                 options={{
-                  source:{
-                    type: "geojson",
-                    data: "csv://sources/samples.csv",
-                  },
+                  source: "samples-source",
                   paint: {
                     "circle-color": "#22BB5D",
                     "circle-stroke-width": 0,
                   },
                 }}
                 labelProp="id"
-                labelOptions={{                  
+                labelOptions={{
+                  source: "samples-source",  
                   layout: {
                     "text-size": {
                       stops: [
@@ -77,7 +87,13 @@ export default function ProjectLayers() {
               />
             }
           />
-         
+          {userLayer &&  <LayerListItem
+            name="User Layer"
+            configurable={true}            
+            buttons={<Button onClick={()=> setUserlayer(undefined)}><DeleteIcon /></Button>}
+            layerComponent={<MlGeoJsonLayer {...userLayer?.config} />}            
+            />
+          }
         </LayerList>
       </Sidebar>
     </>
