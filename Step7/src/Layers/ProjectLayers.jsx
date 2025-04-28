@@ -39,8 +39,8 @@ export default function ProjectLayers() {
         
         <LayerList>
           <LayerListItem
-            visible={true}
             configurable={true}
+            visible={true}
             type="layer"
             layerId="monitoring"
             name="Monitoring areas"
@@ -60,6 +60,8 @@ export default function ProjectLayers() {
           <LayerListItem
             name="Samples"
             configurable={true}
+            visible={true}
+            type="layer"
             layerComponent={
               <MlGeoJsonLayer
                 layerId="samples"

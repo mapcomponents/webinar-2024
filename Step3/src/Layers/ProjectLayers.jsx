@@ -20,6 +20,7 @@ export default function ProjectLayers() {
         <LayerList>
           <LayerListItem                   
             configurable={true}
+            visible={true}
             type="layer"
             layerId="monitoring"
             name="Monitoring areas"         
@@ -38,11 +39,13 @@ export default function ProjectLayers() {
           />
           <LayerListItem
             name="Samples"
-            configurable={true}         
+            configurable={true}
+            visible={true}
+            type="layer"
             layerComponent={
               <MlGeoJsonLayer
-                layerId="samples"
                 type="circle"
+                layerId="samples"
                 options={{
                   source: {
                     type: "geojson",
