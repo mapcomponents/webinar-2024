@@ -1,4 +1,4 @@
-# MapComponents Webseminar 2024
+# MapComponents Webseminar
 #### <div align="right"> [Home](https://github.com/mapcomponents/webinar-2024)</div>
 #### <div align="right"> [Zu Step 4](https://github.com/mapcomponents/webinar-2024/tree/main/Step4#step-4)</div>
 
