@@ -1,4 +1,4 @@
-# MapComponents Webinar 2024
+# MapComponents Webinar 2025
 
 This is a [MapComponents](https://mapcomponents.org) project using Vite and React.
 
