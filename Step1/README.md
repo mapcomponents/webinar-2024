@@ -1,4 +1,4 @@
-# MapComponents Webseminar 2024 
+# MapComponents Webseminar 2025
 #### <div align="right"> [Home](https://github.com/mapcomponents/webinar-2024)</div>
 
 ## Step 1 
